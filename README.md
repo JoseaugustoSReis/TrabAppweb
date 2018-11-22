@@ -8,6 +8,7 @@ Trabalho da disciplina de análise e projeto de aplicação web
 * git checkout -b nomeDaSuaBranch
 
 *Toda vez que terminar de desenvolver sua tarefa aplique os seguintes comandos:
+
 *git checkout master
 *git pull
 *git checkout nomedasuabranch

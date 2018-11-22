@@ -11,16 +11,16 @@ Trabalho da disciplina de análise e projeto de aplicação web
 
 *Toda vez que terminar de desenvolver sua tarefa aplique os seguintes comandos:
 
-*git checkout master
-*git pull
-*git checkout nomedasuabranch
-*git merge master
-*git add .
-*git commit -m "Escreva o que vc fez na sua tarefa"
-*git push origin nomedasuabranch
+`git checkout master
+`git pull
+`git checkout nomedasuabranch
+`git merge master
+`git add .
+`git commit -m "Escreva o que vc fez na sua tarefa"
+`git push origin nomedasuabranch
 
 *Toda vez que acessar o trabalho atualize sua branch com o comando:
-*git pull
+`git pull
 
 *caso necessite atualizar seu repositório com os dados da master digite o comando:
-*git pull origin master.
+`git pull origin master.

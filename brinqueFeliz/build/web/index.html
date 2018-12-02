@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -89,10 +83,11 @@ and open the template in the editor.
                 overflow: scroll;
                 max-height: 300px;
                 min-height: 200px;
+                padding: 5px;
             }
             
             ::-webkit-scrollbar {
-                width: 12px;
+                width: 7px;
                 height: 0px;
             }
 
@@ -190,10 +185,174 @@ and open the template in the editor.
                 background:green;
             }
             
+            .btnDetalhes{
+                color:#ffffff;
+                background:#919191;
+                border:0px none #ffffff;
+                text-shadow:0px 1px 2px #222222;
+                border-radius: 5px;
+                height: 22px;
+                width: 70px;
+                font-size: 14px;
+                cursor:pointer;
+                margin-bottom: 2px;
+            }
+            
+            .btnDetalhes:active{
+                cursor:pointer;
+                position:relative;
+                top:2px;
+            }
+            
+            .btnDetalhes:hover {
+                background: #757575;
+            }
+            
+            .btnExcluir{
+                color:#ffffff;
+                background:#d64040;
+                border:0px none #ffffff;
+                text-shadow:0px 1px 2px #222222;
+                border-radius: 5px;
+                height: 22px;
+                width: 70px;
+                font-size: 14px;
+                cursor:pointer;
+                
+            }
+            
+            .btnExcluir:active{
+                cursor:pointer;
+                position:relative;
+                top:2px;
+            }
+            
+            .btnExcluir:hover {
+                background: #c61f1f;
+            }
+            
+            .btnCancelar{
+                color:#ffffff;
+                background:#c4c4c4;
+                border:0px none #ffffff;
+                text-shadow:0px 1px 2px #222222;
+                box-shadow:0px 0.1px 5px #000000;
+                border-radius: 5px;
+                height: 35px;
+                width: 85px;
+                font-size: 17px;
+                cursor:pointer;
+                margin-left: 160px;
+                margin-right: 85px;
+                margin-bottom: 50px;
+            }
+            
+            .btnCancelar:active{
+                cursor:pointer;
+                box-shadow:0px 0.1px 1px #000000;
+                position:relative;
+                top:2px;
+            }
+            
+            .btnCancelar:hover {
+                background: #adadad;
+            }
+            
+            .btnReceber{
+                color:#ffffff;
+                background:#94ef3e;
+                border: 0px none white;
+                text-shadow:0px 1px 2px #222222;
+                box-shadow:0px 0.1px 5px #000000;
+                border-radius: 5px;
+                height: 35px;
+                width: 85px;
+                font-size: 17px;
+                cursor:pointer;
+            }
+            
+            .btnReceber:active{
+                cursor:pointer;
+                box-shadow:0px 0.1px 1px #000000;
+                position:relative;
+                top:2px;
+            }
+            
+            .btnReceber:hover {
+                background: #72ba2e;
+            }
+            
             table tr {
                 border:1px solid #333;
             }
             
+            .testanto{
+                display: table;
+                border:1px solid #f2f2f2;
+                border-radius: 7px;
+                margin-bottom: 5px;
+            }
+            
+            .celula {
+                display: table-cell;
+                padding: 6px;
+                vertical-align: middle;
+            }
+            
+            #botao{  
+                padding-right: 18px;
+                padding-bottom: 29px;
+            }
+            #foto_produto{
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+            
+            #cabecalho_carrinho{
+                background-color: #d3d3d3;
+                border-color: #adadad;
+                padding-left: 30px;
+                display: table;
+                width:530px;
+                margin-bottom: 5px;                
+            }
+            
+            .cabecalho_item{
+                display: table-cell;
+            }
+            
+            #produto {
+                padding-right: 50px;
+            }
+            
+            #espacoproduto{
+                width: 200px;
+                max-width: 200px;
+            }
+            #espacoquantidade{
+                width: 50px;
+                padding-left: 10px;
+            }
+            #espacovalor{
+                width: 20px;
+                padding-left: 70px;
+            }
+            #espacoacoes{
+                padding-left: 45px;
+            }
+            
+            #quantidade{
+                width: 35px;
+                margin-bottom: 0px;
+            }
+            
+            .item_carrinho{
+                display: table;
+                border:1px solid #f2f2f2;
+                border-radius: 7px;
+                margin-bottom: 5px;
+                width: 547px;
+            }
 
         </style>        
     
@@ -265,55 +424,73 @@ and open the template in the editor.
                 
                 <p>Produtos Encontrados:</p>
                 <div class="caixas" id="com_scroll">
-                    
-                    <!-- ESSAS TABLES SÃO APENAS PARA ENTENDER COMO VAI FICAR NO FINAL, TEM QUE SUBSTITUIR POR UMA LISTA OU ALGO DO TIPO-->
-                    
-                    <table class="lista_produtos_encontrados">
-                        <tr class="item_produto">
-                            <td><img src="perfil_generico.jpeg" width="100px"/></td>
-                            <td>Descrição: blablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blabla</td> 
-                            <button class="i2Style">+</button> 
-                        </tr>
-                    </table>  
-                    <table class="lista_produtos_encontrados">
-                        <tr class="item_produto">
-                            <td><img src="perfil_generico.jpeg" width="100px"/></td>
-                            <td>Descrição: blablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blabla</td> 
-                            <button class="i2Style">+</button> 
-                        </tr>
-                    </table> 
-                    <table class="lista_produtos_encontrados">
-                        <tr class="item_produto">
-                            <td><img src="perfil_generico.jpeg" width="100px"/></td>
-                            <td>Descrição: blablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blabla</td> 
-                            <button class="i2Style">+</button> 
-                        </tr>
-                    </table> 
-                    <table class="lista_produtos_encontrados">
-                        <tr class="item_produto">
-                            <td><img src="perfil_generico.jpeg" width="100px"/></td>
-                            <td>Descrição: blablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blabla</td> 
-                            <button class="i2Style">+</button> 
-                        </tr>
-                    </table> 
-                    <table class="lista_produtos_encontrados">
-                        <tr class="item_produto">
-                            <td><img src="perfil_generico.jpeg" width="100px"/></td>
-                            <td>Descrição: blablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blabla</td> 
-                            <button class="i2Style">+</button> 
-                        </tr>
-                    </table> 
+
+                    <div class='testanto'>
+                        <div id='foto_produto' class='celula'>
+                            <img src='perfil_generico.jpeg' width='100px'/>
+                        </div>
+
+                        <div class='celula'>
+                            <p>Descrição: dshjasndsadksadkjaslkdjsajdlksa dsadjsakldjslajdlsaj sjdklas djsakldj sakldjasi djsoi dsjasi asjdoi sajdksajdkas jdksa jdisa dsaj djas çkdjaskl djsalkjd sa</p>
+                        </div>
+
+                        <div id='botao' class='celula'>
+                            <button class='i2Style'>+</button>
+                        </div>
+                    </div>
                     
                 </div>
                 
-                <p>Carrinho:</p>                
+                <p>Carrinho:</p>   
+                <div id="cabecalho_carrinho" class="caixas">
+                    <div id="produto" class="cabecalho_item">
+                        <p>Produto</p>                    
+                    </div>
+                    <div class="cabecalho_item" padding-left="10px">
+                        <p>Quantidade</p>                    
+                    </div>
+                    <div class="cabecalho_item">
+                        <p>Valor Total</p>                    
+                    </div>
+                    <div class="cabecalho_item">
+                        <p>Ações</p>                    
+                    </div>
+                </div>
+                
                 <div class="caixas">
                     
-                    <p>blablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blabla. </p>
-                    <p>blablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blablablablabla bla blabla. </p>
+                    <div class='item_carrinho'>
+                        <div id="espacoproduto" class="celula">
+                            <p>Amoeba</p>
+                        </div>
+                        <div id="espacoquantidade" class="celula">
+                            <form action="index.html" method="post">
+                            <input type="number" name="quantidade" id="quantidade" size="50" min="1">                        
+                            </form> 
+                        </div>
+                        <div id="espacovalor" class="celula">
+                            <table>
+                                <th><p>R$</p></th>
+                                <td><p>10,00</p></td>
+                            </table>
+                        </div>
+                        <div id="espacoacoes" class="celula">
+                            <table>
+                                <tr><button class='btnDetalhes'>Detalhes</button></tr>
+                                <tr><button class='btnExcluir'>Excluir</button></tr>
+                            </table>                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="base">
+                    <button class='btnCancelar'>Cancelar</button>
+                    <button class='btnReceber'>Receber</button>
                 </div>
 
             </div>
+            
         
         </main>
     

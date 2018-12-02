@@ -22,9 +22,10 @@ public class RealizarVenda {
     VendaDAO venda = new VendaDAO();
     ClienteDAO cliente = new ClienteDAO();
 
-    public void NovaVenda(ProdutoDAO produto, int quantidade, ClienteDAO cliente, VendedorDAO vendedor) {
+    public void NovaVenda(ProdutoDAO produto, int quantidadeDeCada, ClienteDAO cliente, VendedorDAO vendedor) {
         Date dataVenda = new Date();
-        int qtd = quantidade;
+        int qtd = quantidadeDeCada;
+        produto.vendido++;
 
         //SQL com dados da venda
         //this.repositorio.CadastrarNovaVenda(produto, dataVenda, quantidade, cliente, vendedor);
